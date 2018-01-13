@@ -4,17 +4,19 @@
     <meta charset="utf-8">
     <title>Beagle</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="css/style.css">
 
   </head>
   <body>
+    <!-- START OF NAVIGATION -->
     <div class="nav fixed-top" id="navbar">
       <div>
         <a id="logo" href="#home">BEAGLE</a>
       </div>
       <div class="nav-links ml-auto">
-        <a class="active-home" href="#home">Home</a>
+        <a class="active-home" href="#home" id="home-button">Home</a>
         <a href="#about">About</a>
         <a href="#strategy">Strategy</a>
         <a href="#audience">Audience</a>
@@ -24,9 +26,11 @@
         <a href="#contact">Contact</a>
       </div>
     </div>
+    <!-- END OF NAVIGATION -->
 
   <div class="content">
 
+    <!-- START OF PAGE 1 - SLIDER -->
     <div id="page1">
       <div class="anchor" id="home"></div>
         <div class="slideshow-container">
@@ -58,60 +62,413 @@
           <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
         </div>
-        <br>
-
+      </div>
     </div>
+    <!-- END OF PAGE 1 - SLIDER -->
 
+    <!-- START OF PAGE 2 - ABOUT -->
     <div id="page2">
       <div class="anchor" id="about"></div>
+        <div class="header">
+            <h1 class="header-text">About</h1>
+        </div>
+        <!-- BEGIN SECTION CAPTION -->
+        <div class="caption">We are BEAGLE and we built our company with 15 years of experience.</div>
+        <!-- END SECTION CAPTION -->
+        <div class="about-grid-container">
 
+          <div class="grid">
+            <div class="col-1-3">
+              <h2>Who we are?</h2>
+              <p>Vestibulum mollis eros quis turpis pulvinar tincidunt. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum dapibus lectus a ligula blandit ac egestas ipsum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            </div>
+            <div class="col-1-3">
+              <h2>Why Choose Us?</h2>
+              <p>Vestibulum mollis eros quis turpis pulvinar tincidunt. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum dapibus lectus a ligula blandit ac egestas ipsum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            </div>
+            <div class="col-1-3">
+              <h2>What&#8217;s New?</h2>
+              <p>Vestibulum mollis eros quis turpis pulvinar tincidunt. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum dapibus lectus a ligula blandit ac egestas ipsum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="about-container">
+          <div class="clear"></div>
+          <div class="space" style="height: 10px;"></div>
+          <div class="fancy-header"><h1>MEET OUR TEAM</h1></div>
+          <div class="team-container">
+            <div class="one_fourth">
+              <div class="team-member">
+                <img src="http://demo.rocknrolladesigns.com/wp/versi-text/wp-content/uploads/2013/06/team_1.png" class="team-image" alt="Robb Stark" />
+                <h3 class="team-member-name">Robb Stark</h3>
+                <div class="team-member-position">The Boss</div>
+                  <p>Terre estere doloremique sei eaque ipsa quae ab illo inventore veritatis rete et quasi architecto beataes vitae.</p>
+              </div>
+            </div>
+            <div class="one_fourth">
+              <div class="team-member">
+                <img src="http://demo.rocknrolladesigns.com/wp/versi-text/wp-content/uploads/2013/06/team_2.png" class="team-image" alt=" Catelyn Stark" />
+                <h3 class="team-member-name"> Catelyn Stark</h3>
+                <div class="team-member-position">Designer</div>
+                  <p>Terre estere doloremique sei eaque ipsa quae ab illo inventore veritatis rete et quasi architecto beataes vitae.</p>
+                </div>
+              </div>
+            <div class="one_fourth">
+              <div class="team-member">
+                <img src="http://demo.rocknrolladesigns.com/wp/versi-text/wp-content/uploads/2013/06/team_3.png" class="team-image" alt="Jon Snow" />
+                <h3 class="team-member-name">Jon Snow</h3>
+                <div class="team-member-position">Marketing Manager</div>
+                  <p>Terre estere doloremique sei eaque ipsa quae ab illo inventore veritatis rete et quasi architecto beataes vitae.</p>
+                </div>
+            </div>
+            <div class="one_fourth last">
+              <div class="team-member">
+                <img src="http://demo.rocknrolladesigns.com/wp/versi-text/wp-content/uploads/2013/06/team_4.png" class="team-image" alt="Arya Stark" />
+                <h3 class="team-member-name">Arya Stark</h3>
+                <div class="team-member-position">Director</div>
+                  <p>Terre estere doloremique sei eaque ipsa quae ab illo inventore veritatis rete et quasi architecto beataes vitae.</p>
+              </div>
+            </div>
+            <div class="clear"></div>
+          </div>
+
+        </div>
     </div>
+
 
 
     <div id="page3">
       <div class="anchor" id="strategy"></div>
-      <a class="smooth"></a>
-        Portfolio page content goes here.
+      <div class="header">
+        <h1 class="header-text">Strategy</h1>
+      </div>
+      <!-- BEGIN SECTION CAPTION -->
+      <div class="caption">We are BEAGLE and we built our company with 15 years of experience.</div>
+      <!-- END SECTION CAPTION -->
+      <div class="strategy-container">
+        <div class="one_half">
+          <!-- BEGIN SERVICE BOX  -->
+          <div class="rnr-service-box">
+            <!-- BEGIN SERVICE BOX ICON -->
+            <div class="rnr-service-box-icon"><i class="fa fa-tablet"></i></div>
+            <!-- END SERVICE BOX ICON -->
+            <!-- BEGIN SERVICE BOX CONTENT -->
+            <div class="rnr-service-box-content">
+              <h2 class="rnr-service-box-title">Absolutley Beautiful design</h2>
+              <p>Nullam vitae sollicitudin eros. Cras varius vehicula velit, ac congue quam dictum sed. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+            </div><!-- END SERVICE BOX CONTENT -->
+          </div> <!-- END SERVICE BOX -->
+        </div>
+        <div class="one_half last">
+          <!-- BEGIN SERVICE BOX  -->
+          <div class="rnr-service-box">
+            <!-- BEGIN SERVICE BOX ICON -->
+            <div class="rnr-service-box-icon"><i class="fa fa-gift"></i></div>
+            <!-- END SERVICE BOX ICON -->
+            <!-- BEGIN SERVICE BOX CONTENT -->
+            <div class="rnr-service-box-content">
+              <h2 class="rnr-service-box-title">Constant Updates</h2>
+              <p>Nullam vitae sollicitudin eros. Cras varius vehicula velit, ac congue quam dictum sed. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+            </div> <!-- END SERVICE BOX CONTENT -->
+          </div> <!-- END SERVICE BOX -->
+        </div>
+        <div class="clear"></div>
+        <div class="one_half">  <!-- BEGIN SERVICE BOX  -->
+          <div class="rnr-service-box"><!-- BEGIN SERVICE BOX ICON -->
+            <div class="rnr-service-box-icon"><i class="fa fa-cogs"></i></div><!-- END SERVICE BOX ICON -->
+            <!-- BEGIN SERVICE BOX CONTENT -->
+            <div class="rnr-service-box-content">
+              <h2 class="rnr-service-box-title">Creative Ninja</h2>
+              <p>Nullam vitae sollicitudin eros. Cras varius vehicula velit, ac congue quam dictum sed. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+            </div><!-- END SERVICE BOX CONTENT -->
+          </div> <!-- END SERVICE BOX -->
+        </div>
+        <div class="one_half last"><!-- BEGIN SERVICE BOX  -->
+          <div class="rnr-service-box"><!-- BEGIN SERVICE BOX ICON -->
+            <div class="rnr-service-box-icon"><i class="fa fa-bolt"></i></div><!-- END SERVICE BOX ICON -->
+            <!-- BEGIN SERVICE BOX CONTENT -->
+            <div class="rnr-service-box-content">
+              <h2 class="rnr-service-box-title">Top Notch Support</h2>
+              <p>Nullam vitae sollicitudin eros. Cras varius vehicula velit, ac congue quam dictum sed. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+            </div><!-- END SERVICE BOX CONTENT -->
+          </div> <!-- END SERVICE BOX -->
+        </div>
+        <div class="one_half">
+          <!-- BEGIN SERVICE BOX  -->
+          <div class="rnr-service-box">
+            <!-- BEGIN SERVICE BOX ICON -->
+            <div class="rnr-service-box-icon"><i class="fa fa-tablet"></i></div>
+            <!-- END SERVICE BOX ICON -->
+            <!-- BEGIN SERVICE BOX CONTENT -->
+            <div class="rnr-service-box-content">
+              <h2 class="rnr-service-box-title">Absolutley Beautiful design</h2>
+              <p>Nullam vitae sollicitudin eros. Cras varius vehicula velit, ac congue quam dictum sed. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+            </div><!-- END SERVICE BOX CONTENT -->
+          </div> <!-- END SERVICE BOX -->
+        </div>
+        <div class="one_half last">
+          <!-- BEGIN SERVICE BOX  -->
+          <div class="rnr-service-box">
+            <!-- BEGIN SERVICE BOX ICON -->
+            <div class="rnr-service-box-icon"><i class="fa fa-gift"></i></div>
+            <!-- END SERVICE BOX ICON -->
+            <!-- BEGIN SERVICE BOX CONTENT -->
+            <div class="rnr-service-box-content">
+              <h2 class="rnr-service-box-title">Constant Updates</h2>
+              <p>Nullam vitae sollicitudin eros. Cras varius vehicula velit, ac congue quam dictum sed. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+            </div> <!-- END SERVICE BOX CONTENT -->
+          </div> <!-- END SERVICE BOX -->
+        </div>
+        <div class="clear"></div>
+        <div class="one_half">  <!-- BEGIN SERVICE BOX  -->
+          <div class="rnr-service-box"><!-- BEGIN SERVICE BOX ICON -->
+            <div class="rnr-service-box-icon"><i class="fa fa-cogs"></i></div><!-- END SERVICE BOX ICON -->
+            <!-- BEGIN SERVICE BOX CONTENT -->
+            <div class="rnr-service-box-content">
+              <h2 class="rnr-service-box-title">Creative Ninja</h2>
+              <p>Nullam vitae sollicitudin eros. Cras varius vehicula velit, ac congue quam dictum sed. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+            </div><!-- END SERVICE BOX CONTENT -->
+          </div> <!-- END SERVICE BOX -->
+        </div>
+        <div class="one_half last"><!-- BEGIN SERVICE BOX  -->
+          <div class="rnr-service-box"><!-- BEGIN SERVICE BOX ICON -->
+            <div class="rnr-service-box-icon"><i class="fa fa-bolt"></i></div><!-- END SERVICE BOX ICON -->
+            <!-- BEGIN SERVICE BOX CONTENT -->
+            <div class="rnr-service-box-content">
+              <h2 class="rnr-service-box-title">Top Notch Support</h2>
+              <p>Nullam vitae sollicitudin eros. Cras varius vehicula velit, ac congue quam dictum sed. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+            </div><!-- END SERVICE BOX CONTENT -->
+          </div> <!-- END SERVICE BOX -->
+        </div>
+        <div class="clear"></div>
+      </div>
+
     </div>
 
     <div id="page4">
       <div class="anchor" id="audience"></div>
-      <a class="smooth"></a>
-        Contact page content goes here.
+      <div class="header">
+        <h1 class="header-text">Audience</h1>
+      </div>
+      <!-- BEGIN SECTION CAPTION -->
+      <div class="caption">We are BEAGLE and we built our company with 15 years of experience.</div>
+
+      <div class="client_container">
+        <div class="row" data-type="row" data-add-content="false">
+          <div class="clients-grid-itemcol cp3cols cp3cols-tablet" >
+            <div class="middle_align5" >
+              <a href="#" target="blank" ><img class="clients-grid-itemimg" src="img/beagle_client_logo.png" ></a>
+            </div>
+          </div>
+          <div class="clients-grid-itemcol cp3cols cp3cols-tablet" >
+            <div class="middle_align5" >
+              <a href="#" target="blank" ><img class="clients-grid-itemimg" src="img/beagle_client_logo.png" ></a>
+            </div>
+          </div>
+          <div class="clients-grid-itemcol cp3cols cp3cols-tablet" >
+            <div class="middle_align5" >
+              <a href="#" target="blank" ><img class="clients-grid-itemimg" src="img/beagle_client_logo.png" ></a>
+            </div>
+          </div>
+          <div class="clients-grid-itemcol cp3cols cp3cols-tablet" >
+            <div class="middle_align5" >
+              <a href="#" target="blank" ><img class="clients-grid-itemimg" src="img/beagle_client_logo.png" ></a>
+            </div>
+          </div>
+          <div class="clients-grid-itemcol cp3cols cp3cols-tablet" >
+            <div class="middle_align5" >
+              <a href="#" target="blank" ><img class="clients-grid-itemimg" src="img/beagle_client_logo.png" > </a>
+            </div>
+            <a href="#" target="blank" class="" > </a>
+          </div>
+          <a href="#" target="blank" > </a>
+          <div class="clients-grid-itemcol cp3cols cp3cols-tablet" >
+            <a href="#" target="blank" class="" > </a>
+            <div class="middle_align5" >
+              <a href="#" target="blank" ></a>
+              <a href="#" target="blank" ><img class="clients-grid-itemimg" src="img/beagle_client_logo.png" ></a>
+            </div>
+          </div>
+          <div class="clients-grid-itemcol cp3cols cp3cols-tablet" >
+            <div class="middle_align5" >
+              <a href="#" target="blank" ><img class="clients-grid-itemimg" src="img/beagle_client_logo.png" ></a>
+            </div>
+          </div>
+          <div class="clients-grid-itemcol cp3cols cp3cols-tablet" >
+            <div class="middle_align5" >
+              <a href="#" target="blank" ><img class="clients-grid-itemimg" src="img/beagle_client_logo.png" ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="page5">
       <div class="anchor" id="crisis-response"></div>
-      <a class="smooth"></a>
-        Contact page content goes here.
+      <div class="header">
+        <h1 class="header-text">Crisis response</h1>
+      </div>
+      <!-- BEGIN SECTION CAPTION -->
+      <div class="caption">We are BEAGLE and we built our company with 15 years of experience.</div>
+      <div class="crisis-container">
+        <p>Vestibulum mollis eros quis turpis pulvinar tincidunt. Suspendisse potenti. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum dapibus lectus a ligula blandit ac egestas ipsum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+
+        <div class="crisis-grid">
+          <div class="crisis-grid-container">
+            <div class="crisis-grid-content">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="img/beagle_crisis.jpg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">This is a title</h3>
+                  <p class="content-text">This is a short description</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="crisis-grid-container">
+            <div class="crisis-grid-content">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="img/beagle_crisis.jpg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">This is a title</h3>
+                  <p class="content-text">This is a short description</p>
+                </div>
+            </div>
+          </div>
+
+          <div class="crisis-grid-container" id="third-crisis-grid">
+            <div class="crisis-grid-content">
+                <div class="content-overlay"></div>
+                <img class="content-image" src="img/beagle_crisis.jpg">
+                <div class="content-details fadeIn-bottom">
+                  <h3 class="content-title">This is a title</h3>
+                  <p class="content-text">This is a short description</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <div id="page6">
       <div class="anchor" id="expertise"></div>
-      <a class="smooth"></a>
-        Contact page content goes here.
+      <div class="header">
+        <h1 class="header-text">Crisis response</h1>
+      </div>
+      <!-- BEGIN SECTION CAPTION -->
+      <div class="caption">We are BEAGLE and we built our company with 15 years of experience.</div>
+      <div class="expertise-container" id="scroll-to">
+        <img src="img/beagle_online_marketing.jpeg" alt="Beagle digital media">
+        <div class="expertise-text">
+          <h2>Title</h2><br />
+          <p>Chase mice run in circles yet mark territory sleep on keyboard. Claw drapes. Intently sniff hand burrow under covers for behind the couch but inspect anything brought into the house. Intently stare at the same spot flop over or give attitude or hide when guests come over yet hide when guests come over mark territory.<br /><br />
+          Chase mice run in circles yet mark territory sleep on keyboard. Claw drapes. Intently sniff hand burrow under covers for behind the couch but inspect anything brought into the house. Intently stare at the same spot flop over or give attitude or hide when guests come over yet hide when guests come over mark territory.<br /><br />
+          Chase mice run in circles yet mark territory sleep on keyboard. Claw drapes. Intently sniff hand burrow under covers for behind the couch but inspect anything brought into the house. Intently stare at the same spot flop over or give attitude or hide when guests come over yet hide when guests come over mark territory.
+          </p>
+        </div>
+      </div>
+
+      <div class="expertise-container-2">
+        <div class="expertise-text-2">
+          <h2>Title</h2><br />
+          <p>Chase mice run in circles yet mark territory sleep on keyboard. Claw drapes. Intently sniff hand burrow under covers for behind the couch but inspect anything brought into the house. Intently stare at the same spot flop over or give attitude or hide when guests come over yet hide when guests come over mark territory.<br /><br />
+          Chase mice run in circles yet mark territory sleep on keyboard. Claw drapes. Intently sniff hand burrow under covers for behind the couch but inspect anything brought into the house. Intently stare at the same spot flop over or give attitude or hide when guests come over yet hide when guests come over mark territory.<br /><br />
+          Chase mice run in circles yet mark territory sleep on keyboard. Claw drapes. Intently sniff hand burrow under covers for behind the couch but inspect anything brought into the house. Intently stare at the same spot flop over or give attitude or hide when guests come over yet hide when guests come over mark territory.
+          </p>
+        </div>
+        <img src="img/beagle_online_marketing.jpeg" alt="Beagle digital media">
+      </div>
+
     </div>
 
     <div id="page7">
       <div class="anchor" id="testimonials"></div>
-      <a class="smooth"></a>
-        Contact page content goes here.
+      <div class="header">
+        <h1 class="header-text">Testimonials</h1>
+      </div>
+      <!-- BEGIN SECTION CAPTION -->
+      <div class="caption">We are BEAGLE and we built our company with 15 years of experience.</div>
+
+      <div class="grid">
+        <div class="col-1-3">
+          <blockquote>
+            <p><q> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</q></p>
+          <div class="testi-author">— Learned Hand</div>
+          <div class="testi-position">CEO @ LEGENDARY</div>
+          </blockquote>
+        </div>
+        <div class="col-1-3">
+          <blockquote>
+            <p><q> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</q></p>
+          <div class="testi-author">— Learned Hand</div>
+          <div class="testi-position">CEO @ LEGENDARY</div>
+          </blockquote>
+        </div>
+        <div class="col-1-3">
+          <blockquote>
+            <p><q> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</q></p>
+          <div class="testi-author">— Learned Hand</div>
+          <div class="testi-position">CEO @ LEGENDARY</div>
+          </blockquote>
+        </div>
+      </div>
     </div>
 
     <div id="page8">
       <div class="anchor" id="contact"></div>
-      <a class="smooth"></a>
-        Contact page content goes here.
+      <div class="header">
+        <h1 class="header-text">Contact</h1>
+      </div>
+      <!-- BEGIN SECTION CAPTION -->
+      <div class="caption">We are BEAGLE and we built our company with 15 years of experience.</div>
+      <div class="form-style-6">
+        <h1>Contact Us</h1>
+        <form>
+          <input type="text" name="field1" placeholder="Your Name" />
+          <input type="email" name="field2" placeholder="Email Address" />
+          <textarea name="field3" placeholder="Type your Message" rows="10"></textarea>
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.170316087265!2d-0.1367562842299315!3d51.51009127963573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d3ff201fc1%3A0xf08adf0cfb3eb2fe!2sPiccadilly+Circus%2C+London+W1D+7ET!5e0!3m2!1sen!2suk!4v1515792904594" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-  </div>
-
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <!-- <h3>BEA<span>GLE</span></h3> -->
+      <img src="img/beagle_logo3.png" alt="Beagle logo" height="174px">
     </div>
-    <!-- /.container -->
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>21 Revolution Street</span> London, UK</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>0207 555 123456</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="/cdn-cgi/l/email-protection#3e4d4b4e4e514c4a7e5d51534e5f5047105d5153"><span class="__cf_email__" data-cfemail="15666065657a676155767a7865747b6c3b767a78">info@email.com</span></a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About Beagle</span>
+        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+      </p>
+      <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+      </div>
+    </div>
+    <p class="footer-company-name">BEAGLE &copy; 2018</p>
   </footer>
 
 

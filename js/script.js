@@ -1,41 +1,58 @@
 /*jshint esversion: 6 */
 
-// scroll //
+// smototh scroll & jump menu with active class//
 
-$(document).ready(function(){
-  // Add smooth scrolling to all links
+$(document).ready(function() {
+  $("#home-button").addClass("active-home");
+    // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+        // Store hash
+        var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
   });
+
+	$('a[href*=#]').bind('click', function(e) {
+    				e.preventDefault(); // prevent hard jump, the default behavior
+
+    				var target = $(this).attr("href"); // Set the target as variable
+
+    				// perform animated scrolling by getting top-position of target-element and set it as scroll target
+    				$('html, body').stop().animate({
+    						scrollTop: $(target).offset().top
+    				}, 600, function() {
+    						location.hash = target; //attach the hash (#jumptarget) to the pageurl
+    				});
+
+    				return false;
+    		});
 });
 
-
-//NAVIGATION//
-$(".nav-links a").click(function(){
-  $(this).addClass("active-nav").css("color", "#fff");
-
-  $(".nav-links a").not(this).removeClass("active-nav").css("color", "#000");
-  $(".nav-links a:first").removeClass("active-home");
-});
-
+$(window).scroll(function() {
+    		var scrollDistance = $(window).scrollTop();
+    		// Assign active class to nav links while scolling
+    		$('.anchor').each(function(i) {
+    				if ($(this).position().top <= scrollDistance) {
+    						$('.nav-links a.active-nav').removeClass('active-nav');
+    						$('.nav-links a').eq(i).addClass('active-nav');
+    				}
+    		});
+}).scroll();
 
 
 //SLIDE SHOW//
